@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InvestSmart</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,33 +16,88 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
+    <header class="navbar navbar-expand-lg sticky-top p-2">
         <div class="container">
-            <h1 class="navbar-brand fs-1 fw-bold">Titulo</h1>
-            <nav>
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
+            <div class="top d-flex">
+                <img class="me-1 mt-lg-2 mt-0" src="/logo.png"/>
+                <h1 class="navbar-brand fs-1 fw-bolder m-0 section-title">InvestSmart</h1>
+            </div>
+            <button type="button" class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
                         <a class="nav-link active" href="#">
-                            <i class="bi bi-house-door"></i>
-                            Info
+                            <i class="bi bi-house-door me-1"></i>
+                            Home
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Info</a>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-cash-coin me-1"></i>
+                            investimentos
+                        </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Info</a>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-calculator me-1"></i>
+                            Calculadora
+                        </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Info</a>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    <section>
+        <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://wallpapers.com/images/high/investment-1920-x-1119-picture-q31yra7t8d0enwdo.webp"/>
+                </div>
+                <div class="carousel-item"data-bs-interval="2000">
+                    <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-vza81vhugzsw2kkz.webp"/>
+                </div>
+                <div class="carousel-item"data-bs-interval="2000">
+                    <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-5hwafvfxw4zba2ac.webp"/>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="https://wallpapers.com/images/high/closeup-of-hands-holding-investment-concept-icons-yw5j6wzg1eo59y7w.webp" class="d-block w-100 rounded">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="section-title text-center text-md-start fw-bold">Por que <span class="text-color">investir?</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate dolor eveniet minima reiciendis sint in neque voluptates nulla est molestiae natus doloribus, dicta, nostrum minus ipsum. At, amet perferendis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/messages_pt_BR.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
