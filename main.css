@@ -1,0 +1,22 @@
+body {
+    font-family: Roboto , sans-serif;
+}
+
+.navbar {
+    background-color: rgb(11, 54, 40);
+}
+
+.nav .nav-link.active{
+    background-color: white;
+    color:aquamarine ;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: "Send Flowers", cursive; ;
+}
