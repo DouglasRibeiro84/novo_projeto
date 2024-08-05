@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-2">
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
             <div class="top d-flex">
                 <img class="me-1 mt-lg-2 mt-0" src="/logo.png"/>
@@ -28,13 +28,13 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link active" href="#">
+                        <a  href="#home" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
                             Home
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#investimentos">
                             <i class="bi bi-cash-coin me-1"></i>
                             investimentos
                         </a>
@@ -55,43 +55,319 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div class="carousel slide" id="carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="https://wallpapers.com/images/high/investment-1920-x-1119-picture-q31yra7t8d0enwdo.webp"/>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="home">
+            <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="https://wallpapers.com/images/high/investment-1920-x-1119-picture-q31yra7t8d0enwdo.webp"/>
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                        <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-vza81vhugzsw2kkz.webp"/>
+                    </div>
+                    <div class="carousel-item"data-bs-interval="2000">
+                        <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-5hwafvfxw4zba2ac.webp"/>
+                    </div>
                 </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                    <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-vza81vhugzsw2kkz.webp"/>
-                </div>
-                <div class="carousel-item"data-bs-interval="2000">
-                    <img src="https://wallpapers.com/images/high/investment-1920-x-1080-picture-5hwafvfxw4zba2ac.webp"/>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-            </div>
-        </div>
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="https://wallpapers.com/images/high/closeup-of-hands-holding-investment-concept-icons-yw5j6wzg1eo59y7w.webp" class="d-block w-100 rounded">
-                </div>
-                <div class="col-md-7">
-                    <h3 class="section-title text-center text-md-start fw-bold">Por que <span class="text-color">investir?</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate dolor eveniet minima reiciendis sint in neque voluptates nulla est molestiae natus doloribus, dicta, nostrum minus ipsum. At, amet perferendis.</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://wallpapers.com/images/high/closeup-of-hands-holding-investment-concept-icons-yw5j6wzg1eo59y7w.webp" class="d-block w-100 rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title fw-bold text-center text-md-start">Por que <span class="text-color">investir?</span></h2>
+                        <p>
+                            Investir é essencial para crescer seu patrimônio e proteger seu dinheiro contra a inflação. Ao investir, você potencialmente obtém retornos maiores do que na poupança, ajudando a alcançar objetivos financeiros a longo prazo, como a compra de uma casa ou a aposentadoria. A diversificação reduz riscos, e a renda passiva gerada pode oferecer maior segurança financeira. Além disso, investir pode trazer benefícios fiscais e promover aprendizado sobre finanças, tornando-se uma estratégia vital para garantir um futuro financeiro mais estável e confortável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="investimentos" class="pt-4 pb-4">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title fw-bold text-center">Principais tipos de <span class="text-color">investimentos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3">
+                        <nav class="nav nav-pills flex-column nav-investimento">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acoes" class="fw-bold text-md-start nav-link text-color active">Ações</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro" class="fw-bold text-md-start nav-link text-color">Tesouro Direito</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fis" class="fw-bold text-md-start nav-link text-color">FIIs</button>
+                        </nav>
+                    </aside>
+                    <main class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="acoes">
+                                <div class="row">
+                                    <nav class="nav nav-pills justify-content-center mb-3">
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-positivas" class="fw-bold text-md-start nav-link text-color positiva active">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-negativas" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                    </nav>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="acoes-positivas">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP._HNzLvdQPuTpvA5wMQT4igAAAA?w=275&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Potencial de Alta Rentabilidade:</h4>
+                                                            <p class="card-text">
+                                                                Ações têm o potencial de proporcionar retornos superiores aos de outros investimentos, como poupança ou títulos. Com o crescimento das empresas e a valorização das ações, os investidores podem obter ganhos consideráveis ao longo do tempo.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.0JG5jAFaEDVwQmLXcdWj8wHaEn?w=284&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Participação nos Lucros:</h4>
+                                                            <p class="card-text">
+                                                                Ao investir em ações, você pode receber dividendos, que são pagamentos periódicos feitos pelas empresas aos acionistas. Esses dividendos oferecem uma fonte de renda passiva e podem ser reinvestidos para fomentar ainda mais o crescimento do seu portfólio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.XuRlK7GQrcuVUbpA6-m3PAHaE8?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Diversificação e Crescimento do Portfólio:</h4>
+                                                            <p class="card-text">
+                                                                Ações permitem diversificar seu portfólio investindo em diferentes setores e empresas. Essa diversificação ajuda a mitigar riscos e oferece oportunidades de crescimento à medida que as empresas se desenvolvem e ampliam seus lucros.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="acoes-negativas">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.05Sb8MGh98X5yebkoTbG-wHaE7?w=272&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Volatilidade e Risco:</h4>
+                                                            <p class="card-text">
+                                                                O mercado de ações é altamente volátil, com preços das ações podendo variar significativamente em curto espaço de tempo devido a mudanças econômicas, políticas ou eventos específicos da empresa. Isso pode levar a perdas financeiras substanciais, especialmente para investidores que não estão preparados para lidar com essas flutuações.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.kdMQysvtnyk-G2-TI4AAJgHaFC?w=245&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Necessidade de Pesquisa e Conhecimento:</h4>
+                                                            <p class="card-text">
+                                                                Investir em ações exige análise detalhada das empresas e do mercado, como avaliação de fundamentos financeiros, tendências do setor e condições econômicas. Sem pesquisa adequada, investidores correm o risco de tomar decisões mal informadas e de sofrer perdas.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                    <img src="https://th.bing.com/th/id/OIP.P54a_sXvHk-iQSOUehtPQwHaEJ?w=322&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Possíveis Dividendos Baixos ou Irregulares:</h4>
+                                                            <p class="card-text">
+                                                                Nem todas as ações pagam dividendos, e as que o fazem podem ter pagamentos baixos ou inconsistentes. Algumas empresas optam por reinvestir lucros em vez de distribuí-los, o que pode ser desfavorável para investidores que buscam uma fonte de renda passiva estável.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tesouro">
+                                <div class="row">
+                                    <nav class="nav nav-pills justify-content-center mb-3">
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-positiva" class="fw-bold text-md-start nav-link text-color active positiva">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-negativa" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                    </nav>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tesouro-positiva">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.itXyEKyOUmodm7h7QzvS4wHaDU?w=349&h=157&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Segurança:</h4>
+                                                            <p class="card-text">
+                                                                Os títulos do Tesouro Direto são garantidos pelo governo federal, o que os torna uma das opções de investimento mais seguras disponíveis no Brasil. Isso significa que o risco de calote é muito baixo, proporcionando uma alta segurança para o investidor.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.HXT0TW3QpAkZIQY3Eisq6wHaFE?w=219&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Liquidez:</h4>
+                                                            <p class="card-text">
+                                                                Embora o Tesouro Direto tenha prazos de vencimento variados, os investidores podem vender seus títulos antes do vencimento no mercado secundário, o que oferece boa liquidez. Isso proporciona flexibilidade e a possibilidade de acessar o dinheiro investido antes do prazo final, caso necessário.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.Wp5qq9KvmlIX2RH-FD-w6AHaER?w=305&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Diversidade e Acessibilidade:</h4>
+                                                            <p class="card-text">
+                                                                O Tesouro Direto oferece diferentes tipos de títulos, como Tesouro Selic, Tesouro Prefixado e Tesouro IPCA+, permitindo escolher o produto que melhor se adapta aos objetivos e ao perfil de risco. Além disso, o valor mínimo para começar a investir é acessível, tornando o investimento viável para a maioria das pessoas.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tesouro-negativa">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.kqQ24DuY0_p78BFwcMDergHaE8?w=211&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Tributação:</h4>
+                                                            <p class="card-text">
+                                                                Os rendimentos dos títulos do Tesouro Direto estão sujeitos a Imposto de Renda (IR) com alíquotas que variam conforme o prazo de aplicação. Quanto maior o prazo, maior a alíquota, e os ganhos são tributados conforme uma tabela regressiva. Isso pode impactar o retorno final do investimento, especialmente em aplicações de curto prazo.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.v5l-R6RB4i__5oN1ug_FMwHaE7?w=267&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Volatilidade de Preços:</h4>
+                                                            <p class="card-text">
+                                                                Os títulos do Tesouro Direto, especialmente os de longo prazo, podem sofrer variações de preço no mercado secundário devido a mudanças nas taxas de juros e condições econômicas. Isso pode resultar em perdas para quem precisa vender os títulos antes do vencimento, se o mercado estiver desfavorável.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                    <img src="https://th.bing.com/th/id/OIP.JyBbECRwMFdUxeWbMjaE0QHaE7?w=254&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Rentabilidade Limitada:</h4>
+                                                            <p class="card-text">
+                                                                Embora o Tesouro Direto seja seguro, seus rendimentos podem ser relativamente baixos em comparação com outros investimentos mais arriscados, como ações ou fundos de investimento. Isso pode limitar o potencial de retorno, especialmente em um cenário de juros baixos.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fis">
+                                <div class="row">
+                                    <nav class="nav nav-pills justify-content-center mb-3">
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-positiva" class="fw-bold text-md-start nav-link text-color active positiva">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-negativa" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                    </nav>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="fis-positiva">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP._eDIhShLNcktsLBQrovm6AHaEJ?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Rendimento Passivo:</h4>
+                                                            <p class="card-text">
+                                                                Os FIIs geram rendimentos periódicos para os investidores, geralmente provenientes de aluguéis ou vendas de imóveis. Esses rendimentos são distribuídos mensalmente e podem proporcionar uma fonte de renda passiva estável, atraente para quem busca fluxo de caixa regular.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.LOLQUIAIJwWKKl2LiaHynwHaE1?w=239&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Diversificação:</h4>
+                                                            <p class="card-text">
+                                                                Investir em FIIs permite acesso a uma carteira diversificada de imóveis, como shoppings, edifícios comerciais, e hospitais, sem a necessidade de comprar propriedades individualmente. Isso ajuda a diluir o risco, pois os rendimentos e o valor dos FIIs estão atrelados a múltiplos ativos imobiliários.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.OJ4cTP2ZCgD9yFILSCE-UQHaE8?w=226&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Liquidez:</h4>
+                                                            <p class="card-text">
+                                                                FIIs são negociados em bolsas de valores, o que oferece uma boa liquidez comparada à compra direta de imóveis. Os investidores podem comprar e vender cotas dos FIIs facilmente no mercado secundário, proporcionando flexibilidade para ajustar a carteira conforme necessário.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="fis-negativa">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIF.BEcAjwiFXoCkht9GDQs6Tg?w=318&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Risco de Vacância:</h4>
+                                                            <p class="card-text">
+                                                                Os rendimentos dos FIIs muitas vezes dependem dos aluguéis pagos pelos inquilinos dos imóveis. Se um imóvel ficar vazio (vacante) ou se os contratos de aluguel não forem renovados, o rendimento do fundo pode diminuir, afetando os pagamentos aos investidores.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                        <img src="https://th.bing.com/th/id/OIP.-rYU5lDH3ieiGI8-v5PHzgHaE8?pid=ImgDet&w=208&h=138&c=7&dpr=1,5"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Volatilidade de Mercado:</h4>
+                                                            <p class="card-text">
+                                                                Os preços das cotas de FIIs podem ser voláteis e influenciados por condições de mercado e expectativas econômicas. Isso pode resultar em flutuações significativas no valor das cotas e, consequentemente, no valor do investimento, especialmente em períodos de incerteza econômica
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card">
+                                                    <img src="https://th.bing.com/th/id/OIP.Z1RzebmVy-L-1Lm-TZNO5wHaEK?pid=ImgDet&w=208&h=117&c=7&dpr=1,5"/>
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Taxas e Custos:</h4>
+                                                            <p class="card-text">
+                                                                FIIs podem ter taxas de administração e outras despesas que podem impactar a rentabilidade líquida. Esses custos são deduzidos dos rendimentos e podem reduzir o retorno final para o investidor, especialmente se forem altos em relação ao valor do fundo.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

@@ -6,12 +6,12 @@ body {
     background-color: rgb(70, 146, 222);
 }
 
-.nav .nav-link.active{
+#cabecalho .nav .nav-link.active{
     background-color: white;
     color:  rgb(70, 146, 222);
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand,
 .navbar-brand:hover {
     color: white;
@@ -37,5 +37,43 @@ body {
 
 .text-color{
     color: rgb(70, 146, 222);
+}
+
+#home{
+    background-color: rgba(70, 146, 222, 0.283);
+}
+
+.nav-investimento .nav-link.active{
+    background-color:rgb(70, 146, 222) ;
+    color: white;
+}
+
+.nav-investimento .nav-link.active:hover{
+    color: white;
+}
+
+.nav-investimento .nav-link:hover{
+    color: rgb(70, 146, 222);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-body{
+    height: 320px;
+}
+
+.fw-bold.text-md-start.nav-link.text-color.positiva.active{
+    background-color: green;
+}
+
+.fw-bold.text-md-start.nav-link.text-color.positiva.active:active{
+
+}
+
+.fw-bold.text-md-start.nav-link.text-color.negativa{
+    background-color: red;
 }
 
