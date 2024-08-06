@@ -39,11 +39,13 @@ body {
     color: rgb(70, 146, 222);
 }
 
-#home{
+#home,
+#calculadora{
     background-color: rgba(70, 146, 222, 0.283);
 }
 
-.nav-investimento .nav-link.active{
+.nav-investimento .nav-link.active,
+footer{
     background-color:rgb(70, 146, 222) ;
     color: white;
 }
@@ -62,18 +64,61 @@ body {
 }
 
 .card-body{
-    height: 320px;
+    height: 375px;
 }
 
-.fw-bold.text-md-start.nav-link.text-color.positiva.active{
-    background-color: green;
+.nav-pills .positiva{
+    --bs-nav-pills-link-active-bg:green;
+    --bs-nav-pills-link-active-color: #fff;
 }
 
-.fw-bold.text-md-start.nav-link.text-color.positiva.active:active{
-
+.nav-pills .negativa{
+    --bs-nav-pills-link-active-bg:red;
+    --bs-nav-pills-link-active-color: #fff;
 }
 
-.fw-bold.text-md-start.nav-link.text-color.negativa{
-    background-color: red;
+.fw-bold.text-md-start.nav-link.nav-link-success.positiva,
+.fw-bold.text-md-start.nav-link.text-color.positiva{
+    border: 2px solid;
+}
+
+.fw-bold.text-md-start.nav-link.negativa{
+    border: 2px solid ;
+}
+
+.positiva,
+.positiva:hover{
+    color: green;
+}
+
+.negativa,
+.negativa:hover{
+    color: red;
+}
+
+.col-md-7.calculadora{
+    margin: 0 auto;
+}
+
+.btn.btn-primary.w-100.fw-bold.fs-5{
+    background-color:  rgb(70, 146, 222);
+}
+
+#calculadora input::-webkit-input-placeholder{
+    color:rgba(128, 128, 128, 0.473);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;  
+}
+
+.social-links li a{
+    text-decoration: none;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
 }
 

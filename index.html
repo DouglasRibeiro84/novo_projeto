@@ -40,22 +40,22 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#calculadora">
                             <i class="bi bi-calculator me-1"></i>
                             Calculadora
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#contato">
                             <i class="bi bi-chat-left-text me-1"></i>
-                            Contato
+                            Fale conosco
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" >
         <section id="home">
             <div class="carousel slide" id="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -101,7 +101,7 @@
                     <h2 class="section-title fw-bold text-center">Principais tipos de <span class="text-color">investimentos</span></h2>
                 </div>
                 <div class="row">
-                    <aside class="col-md-3">
+                    <aside class="col-md-3 mt-md-5">
                         <nav class="nav nav-pills flex-column nav-investimento">
                             <button type="button" data-bs-toggle="tab" data-bs-target="#acoes" class="fw-bold text-md-start nav-link text-color active">Ações</button>
                             <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro" class="fw-bold text-md-start nav-link text-color">Tesouro Direito</button>
@@ -113,8 +113,8 @@
                             <div class="tab-pane active" id="acoes">
                                 <div class="row">
                                     <nav class="nav nav-pills justify-content-center mb-3">
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-positivas" class="fw-bold text-md-start nav-link text-color positiva active">Positiva</button>
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-negativas" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-positivas" class="fw-bold text-md-start nav-link nav-link-success positiva active mt-2">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#acoes-negativas" class="fw-bold text-md-start nav-link negativa mt-2">Negativa</button>
                                     </nav>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="acoes-positivas">
@@ -197,8 +197,8 @@
                             <div class="tab-pane" id="tesouro">
                                 <div class="row">
                                     <nav class="nav nav-pills justify-content-center mb-3">
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-positiva" class="fw-bold text-md-start nav-link text-color active positiva">Positiva</button>
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-negativa" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-positiva" class="fw-bold text-md-start nav-link text-color active positiva mt-2">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#tesouro-negativa" class="fw-bold text-md-start nav-link text-color negativa mt-2">Negativa</button>
                                     </nav>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tesouro-positiva">
@@ -281,8 +281,8 @@
                             <div class="tab-pane" id="fis">
                                 <div class="row">
                                     <nav class="nav nav-pills justify-content-center mb-3">
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-positiva" class="fw-bold text-md-start nav-link text-color active positiva">Positiva</button>
-                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-negativa" class="fw-bold text-md-start nav-link text-color negativa">Negativa</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-positiva" class="fw-bold text-md-start nav-link text-color active positiva mt-2">Positiva</button>
+                                        <button type="button" data-bs-toggle="tab" data-bs-target="#fis-negativa" class="fw-bold text-md-start nav-link text-color negativa mt-2">Negativa</button>
                                     </nav>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="fis-positiva">
@@ -367,7 +367,99 @@
                 </div>
             </div>
         </section>
+        <section id="calculadora">
+            <div class="container pt-4 pb-4">
+                <div class="row">
+                    <div class="col-md-7 calculadora">
+                        <h2 class="section-title text-color fw-bold text-center">Calculadora</h2>
+                        <div class="row">
+                            <form id="formulario" class="d-flex">
+                                <div class="col-6">
+                                    <input id="campoA" type="number" class="form-control form-control-lg mb-2 " required placeholder="Valor inicial:"/>
+                                    <input id="campoB" type="number" class="form-control form-control-lg mb-2" required placeholder="Valor mensal:"/>
+                                </div>
+                                <div class="col-6">
+                                    <input id="campoC" type="number" class="form-control form-control-lg mb-2 ms-2" required placeholder="Taxa de juros (%):"/>
+                                    <input id="campoD" type="number" class="form-control form-control-lg mb-2 ms-2" required placeholder="Perido de (meses):"/>
+                                </div>
+                            </form>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold fs-5">Calcular</button>
+                        <p class="resposta form-control form-control-lg mt-2 text-center ">
+                            Valor final de <span class="fw-bold">R$:122,222.00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container pt-4 pb-4">
+                <div class="row">
+                    <h2 class="section-title fw-bold text-center">Fale <span class="text-color">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-color">Seu nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-color">Seu email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-color">Seu telefone (opicional)</label>
+                                <input type="tel" class="form-control" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-color">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold btn-primary w-100">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mt-4">
+                            <h3 class="section-title text-color fs-4 fw-bold">
+                                <i class="bi bi-hand-thumbs-up"></i>
+                                Redes socias
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-color"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-color"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-color"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title text-color fs-4 fw-bold">
+                                <i class="bi bi-cursor"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo n°123, Bairro Exemplo - Paraná - PR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <footer class="p-2 text-center align-center">
+        &copy;2024 InvestSmart-Todos direitos reservados
+    </footer>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
