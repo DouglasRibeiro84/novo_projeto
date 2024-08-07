@@ -130,3 +130,7 @@ label#telefone-error.error{
     font-weight: bold;
     
 }
+
+#reespota{
+    display: none;
+}
