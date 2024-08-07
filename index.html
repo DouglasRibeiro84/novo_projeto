@@ -381,7 +381,7 @@
                                     </div>
                                     <div class="col-6">
                                         <input id="campo-c" type="text" class="form-control form-control-lg mb-2 ms-2" required placeholder="Taxa de juros (%):"/>
-                                        <input id="campo-d" type="number" min="0" max="12" class="form-control form-control-lg mb-2 ms-2" required placeholder="Perido de (meses):"/>
+                                        <input id="campo-d" type="number" min="0" class="form-control form-control-lg mb-2 ms-2" required placeholder="Perido de (meses):"/>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100 fw-bold fs-5">Calcular</button>
@@ -418,7 +418,24 @@
                                 <label for="mensagem" class="form-label fw-bold text-color">Sua mensagem</label>
                                 <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
                             </div>
-                            <button type="submit" class="btn fw-bold btn-primary w-100">Enviar</button>
+                            <button id="submit-button" type="submit" class="btn fw-bold btn-primary w-100">Enviar</button>
+                            <div class="modal mt-4" id="teste-modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="section-title text-color fw-bold fs-2">Obrigado pelo contato!!!</h5>
+                                        </div>
+                                        <div class="modal-body fs-5">
+                                            <p>
+                                                Olá <span id="nome-modal" class="section-title text-color fw-bold fs-4"></span> obrigado pela tentativa de contato, porem não esta vinculado a nehum meio de contato, a pagina é apenas para estudo das feramentas html, css, js, jquery e bootstrap.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger fw-bold" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="col-md-6">

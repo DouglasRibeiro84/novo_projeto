@@ -3,7 +3,8 @@ $(document).ready(function(){
     calculadora()
     
     function validacao (){
-        $('#telefone').mask('(00)00000-0000')
+
+    $('#telefone').mask('(00)00000-0000')
     $(".money").mask("#.##0,00", { reverse: true });
     $("#campo-c").mask('##0,0%', {
         reverse: true,
@@ -28,6 +29,16 @@ $(document).ready(function(){
             nome: 'Este campo é obrigatório!',
             email: 'Este campo é obrigatório!',
         },
+        submitHandler: function(form){
+            const nome = $('#nome').val();
+                    $('#nome-modal').text(nome);
+                    
+                    var myModal = new bootstrap.Modal(document.getElementById('teste-modal'));
+                    myModal.show();
+        },
+        invalidHandler: function(evento, validador) {
+            alert('Complete todos os campos')
+        }
     })
     }
     function calculadora() {
